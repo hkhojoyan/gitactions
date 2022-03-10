@@ -1,0 +1,15 @@
+name: CI-CD
+
+on:
+  push:
+      branches:
+          - main
+          
+jobs:
+  my-ci-part:
+    runs-on: ubunutu-latest
+    
+    
+    steps:
+      - name: Git clone repo
+        uses: actions/checkout@v1
